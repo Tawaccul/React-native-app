@@ -11,28 +11,28 @@ import SearchFilter from './SearchFilter.js';
 export default function Main({navigation, route}) {
   const [news, setNews] = useState([ 
        //Сердце
-        {name: 'First', anons:'First', full: 'First describe', key:'1',category:'Сердце', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
-        {name: 'Second', anons:'Second', full: 'First describe',key: '1',category:'Сердце', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
-        {name: 'Third', anons:'third', full: 'First describe', key: '3',category:'Сердце', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
+        {name: 'First', anons:'First', full: 'First describe', key:'111',category:'Сердце', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
+        {name: 'Second', anons:'Second', full: 'First describe',key: '1111',category:'Сердце', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
+        {name: 'Third', anons:'third', full: 'First describe', key: '321',category:'Сердце', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
        
        
         //Легкие
-        {name: 'Болезнь легких', anons:'First', full: 'First describe', key:'4', category:'Легкие',img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
-        {name: 'Вторая болезнь', anons:'Second', full: 'First describe',key: '5',category:'Легкие', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
-        {name: 'Третья болезнь', anons:'third', full: 'First describe', key: '6',category:'Легкие', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
-
+        {name: 'Болезнь легких', anons:'Болезнь легких', full: 'First describe', key:'41223', category:'Легкие',img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
+        {name: 'Вторая болезнь', anons:'Second', full: 'First describe',key: '5123',category:'Легкие', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
+        {name: 'Третья болезнь', anons:'third', full: 'First describe', key: '6123',category:'Легкие', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
+        {name: 'Болезнь легких', anons:'Болезнь легких', full: 'First describe', key:'4123', category:'Легкие',img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
 
         
          //Желудок
-         {name: 'First', anons:'First', full: 'First describe', key:'7',category:'Желудок', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
-         {name: 'Second', anons:'Second', full: 'First describe',key: '8',category:'Желудок', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
-         {name: 'Third', anons:'third', full: 'First describe', key: '9',category:'Желудок', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
+         {name: 'First', anons:'First', full: 'First describe', key:'1237',category:'Желудок', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
+         {name: 'Second', anons:'Second', full: 'First describe',key: '8123',category:'Желудок', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
+         {name: 'Third', anons:'third', full: 'First describe', key: '9123',category:'Желудок', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
         
         
          //Мозг
-         {name: 'First', anons:'First', full: 'First describe', key:'10',category:'Мозг', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
-         {name: 'Second', anons:'Second', full: 'First describe',key: '11',category:'Мозг', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
-         {name: 'Third', anons:'third', full: 'First describe', key: '12',category:'Мозг', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
+         {name: 'First', anons:'First', full: 'First describe', key:'10234',category:'Мозг', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg'},
+         {name: 'Second', anons:'Second', full: 'First describe',key: '12341',category:'Мозг', img:'https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3137-6134-4036-a635-636332613339__9660.jpg' },
+         {name: 'Third', anons:'third', full: 'First describe', key: '1223',category:'Мозг', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2Hiv1487y--V7Ynefyrp9XyIAofKN2P34Pvislvg5U7Lz6zNRzAxbuHKT9i3pDpYeZw&usqp=CAU'},
  
     
 
@@ -77,7 +77,7 @@ export default function Main({navigation, route}) {
 ])
 */
     const [input, setInput] = useState('');
-    //const b  =  news.filter(item => item.name.toLowerCase().includes(inputOne.toLowerCase()))
+    //const b  =  news.filter(item => item.name.toLowerCase().includes(input.toLowerCase()))
      
     
    // console.log(news);
@@ -87,36 +87,57 @@ export default function Main({navigation, route}) {
     return ( 
            
      <View style={ gStyle.main }> 
-        <TextInput 
-       value={input}
-       onChangeText={(text) => setInput(text)}
-       style={styles.searchBar}
-       placeholder='Что вы ищете?'
-       />
      
-       <StatusBar backgroundColor="#00876C" />
-       <SearchFilter data={navigation} input={input} setInput={setInput} style={styles.searchBar} />
+      <StatusBar backgroundColor="#008" />
       
-        <Text style={styles.title}> {a.name}</Text>
-            <Text style={styles.anons}> {a.anons}</Text>
+      
+        
    
    
        <Text style={ [gStyle.title, styles.header] }> Главная страница</Text>
+       <TextInput 
+       value={input}
+       onChangeText={(item) => setInput(item)}
+       style={styles.searchBar}
+       placeholder='Что вы ищете?'
+       />
+  
+       <FlatList data={a} renderItem={({item}) => {
+        
+        if(input==='') {
+          return(
        
-       <FlatList data={a} renderItem={({item}) => (
-         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('FullInfo',item   ) }>
-            <Image style={ styles.image } source={{
-                uri: route.params.img
-            }}/>
+       <View>
+       <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('FullInfo',item   ) }>
+             <Text>{item.name}</Text>
+             <Image style={ {height:150, width:50}} source={{
+             uri: item.img
+         }}/>
 
-            <Text style={styles.title}> {route.params.anons}</Text>
-            <Text style={styles.anons}> {route.params.descript}</Text>
-           
-           
-      
-
-         </TouchableOpacity>
-               )}/> 
+        </TouchableOpacity>  
+          </View>
+          )
+         }
+          if(item.name.toLowerCase().includes(input.toLowerCase())){
+          return(
+            
+             <View>
+              <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('FullInfo',item   ) }>
+             <Text>{item.name}</Text>
+             <Image style={ {height:50, width:50}} source={{
+             uri: item.img
+             
+         }}/>
+      </TouchableOpacity> 
+          </View>
+          )
+          }
+        
+          
+             
+  
+        
+               }}/> 
   
    </View>
     );
@@ -155,7 +176,7 @@ const styles = StyleSheet.create({
     backgroundColor:'#F7FCFF',
     fontSize:15,
     fontFamily:'Gt-med',
-    padding:5,
+    padding:10  ,
     borderColor:'#E9E9E9',
     borderWidth:1,
     borderRadius:20
